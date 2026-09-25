@@ -29,6 +29,20 @@ CONF = json.load(open(os.path.join(ROOT, "site.json"), encoding="utf-8"))
 BASE = (os.environ.get("BASE_URL") or CONF.get("base_url", "")).rstrip("/")
 
 
+def read(path):
+    return open(path, encoding="utf-8").read()
+
+
+def inline_assets(out, own=None):
+    """CSS y JS dentro del HTML: una sola descarga, no depende de que carguen archivos aparte."""
+    css = read(os.path.join(DESIGN, "styles.css"))
+    js = read(os.path.join(DESIGN, "app.js")).replace("</script", "<\\/script")
+    out = out.replace('<link rel="stylesheet" href="../assets/styles.css">', f"<style>{css}</style>")
+    out = out.replace('<link rel="stylesheet" href="assets/styles.css">', f"<style>{css}</style>")
+    out = out.replace('<script src="../assets/app.js"></script>', f"<script>{js}</script>")
+    return out
+
+
 def player_page(tpl, p, own):
     """own: carpeta design/jugadores/<slug>/ (puede no existir)"""
     nick = (p.get("custom") or {}).get("nick") or p.get("nick") or p["slug"]
@@ -48,6 +62,7 @@ def player_page(tpl, p, own):
     out = out.replace('href="styles.css"', 'href="../assets/styles.css"')
     out = out.replace('src="app.js"', 'src="../assets/app.js"')
     out = out.replace("<!--DATA-->", f"<script>window.__PLAYER__={data};</script>")
+    out = inline_assets(out)
     if os.path.exists(os.path.join(own, "custom.css")):
         out = out.replace("</head>", '<link rel="stylesheet" href="custom.css">\n</head>')
     if os.path.exists(os.path.join(own, "custom.js")):
@@ -134,7 +149,7 @@ def main():
         print(f"{slug}: {BASE + '/' + slug + '/' if BASE else '(sin base_url)'}{'  QR ok' if q else ''}")
 
     with open(os.path.join(SITE, "index.html"), "w", encoding="utf-8") as f:
-        f.write(index_page(players))
+        f.write(inline_assets(index_page(players)))
     shutil.copy(os.path.join(SITE, "index.html"), os.path.join(SITE, "404.html"))
     open(os.path.join(SITE, ".nojekyll"), "w").close()
     # copia de muestra para trabajar el diseño aparte
