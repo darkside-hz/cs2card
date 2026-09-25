@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0b0c">
+<!--META-->
+<title>CS2-CARD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- INTRO: se muestra al abrir desde el NFC. Tocar para saltar. -->
+<div id="intro" aria-hidden="true">
+  <div class="intro-grid"></div>
+  <svg class="intro-cross" viewBox="0 0 200 200">
+    <circle class="ic-ring" cx="100" cy="100" r="70"/>
+    <circle class="ic-ring2" cx="100" cy="100" r="86"/>
+    <path class="ic-line" d="M100 4 V60 M100 140 V196 M4 100 H60 M140 100 H196"/>
+    <path class="ic-plus" d="M100 88 V112 M88 100 H112"/>
+  </svg>
+  <div class="intro-text">
+    <div class="intro-status"><span class="dot"></span><span id="intro-status">NFC DETECTADO</span></div>
+    <div class="intro-nick" id="intro-nick">&nbsp;</div>
+    <div class="intro-bar"><i></i></div>
+  </div>
+  <div class="intro-skip">tocá para saltar</div>
+</div>
+
+<div id="app" hidden>
+  <header class="hero">
+    <div class="hero-stripes"><i></i><i></i></div>
+    <div class="hero-cross"></div>
+    <div class="hero-inner">
+      <div class="brand">CS2-CARD <span>//</span> PLAYER PROFILE</div>
+      <p class="ask reveal">¿VOS TENÉS NICK?</p>
+      <h1 class="nick reveal" id="nick"></h1>
+      <p class="realname reveal" id="realname"></p>
+      <div class="chips reveal" id="chips"></div>
+      <p class="headline reveal" id="headline"></p>
+      <div class="socials reveal" id="socials"></div>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs" role="tablist"></nav>
+
+  <main>
+    <section class="panel" id="panel-overview" role="tabpanel">
+      <div class="stats" id="stats"></div>
+      <div class="split" id="split"></div>
+
+      <div class="card">
+        <div class="card-h"><h2>Actividad por año</h2><span class="legend"><i class="lg-e"></i>torneos <i class="lg-w"></i>títulos</span></div>
+        <div class="chart" id="chart"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-h"><h2>Mejores resultados</h2></div>
+        <div class="list" id="highlights"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-h"><h2>Trayectoria</h2><span class="muted" id="teams-count"></span></div>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+
+      <div class="card" id="bio-card">
+        <div class="card-h"><h2>Bio</h2><span class="muted">Liquipedia</span></div>
+        <p class="bio" id="bio"></p>
+        <div id="press"></div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-results" role="tabpanel" hidden>
+      <div class="filters" data-for="results"></div>
+      <div class="list grouped" id="list-results"></div>
+    </section>
+
+    <section class="panel" id="panel-coaching" role="tabpanel" hidden>
+      <div class="filters" data-for="coaching"></div>
+      <div class="list grouped" id="list-coaching"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div>Datos de <a id="src" target="_blank" rel="noopener">Liquipedia</a> · licencia CC BY-SA 3.0 · actualizado <span id="updated"></span></div>
+    <div class="foot-brand">CS2-CARD · B4IT STUDIO</div>
+  </footer>
+</div>
+
+<!--DATA-->
+<script src="app.js"></script>
+</body>
+</html>

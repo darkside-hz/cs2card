@@ -1,0 +1,4 @@
+/* Copiá esta carpeta como design/jugadores/<slug>/ para personalizar solo a ese jugador.
+   Este CSS se carga DESPUÉS del diseño base, así que pisa lo que quieras. */
+:root { --orange: #ff6a13; }
+.nick { font-style: normal; }

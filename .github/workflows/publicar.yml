@@ -1,0 +1,63 @@
+name: Actualizar datos y publicar
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 9 * * 1"   # lunes 06:00 (Argentina)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+
+      # push: solo scrapea jugadores nuevos. semanal / manual: actualiza todos.
+      - name: Scrapear Liquipedia
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            python scraper/liquipedia.py --missing
+          else
+            python scraper/liquipedia.py
+          fi
+
+      - name: Guardar datos en el repo
+        run: |
+          git config user.name "cs2card-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/players
+          git diff --cached --quiet || (git commit -m "datos: actualización desde Liquipedia" && git push)
+
+      - id: pages
+        uses: actions/configure-pages@v5
+      - name: Armar sitio
+        run: python build.py
+        env:
+          BASE_URL: ${{ steps.pages.outputs.base_url }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
