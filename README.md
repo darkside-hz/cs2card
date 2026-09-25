@@ -58,6 +58,8 @@ El NFC guarda solo el link `…/<slug>/`. Todo lo que se muestra en ese link se 
 
 Cambiar `design/index.html`, `styles.css` o `app.js` cambia a todos los jugadores a la vez.
 
+> Manual completo para grabar el NFC: [MANUAL_NFC.md](MANUAL_NFC.md)
+
 ## Grabar el NFC (NTAG213/215)
 
 1. Instalá **NFC Tools** (gratis, iPhone y Android).
