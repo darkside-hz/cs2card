@@ -10,15 +10,22 @@ build.py              arma site/ (una página por jugador) y qr/<slug>.png
 .github/workflows/    GitHub Actions: actualiza los lunes y publica en GitHub Pages (gratis)
 ```
 
-## Agregar un jugador
+## Agregar un jugador (una tarjeta nueva)
 
-1. Sumalo en `players.json`. El `page` es el final del link de Liquipedia: `liquipedia.net/counterstrike/NCH` → `"NCH"`.
-   ```json
-   { "slug": "nch", "page": "NCH" }
-   ```
-   Campos opcionales para pisar lo de Liquipedia: `nick`, `name`, `role`, `tagline`, `bio`, `since`, `links`.
-2. Subí el cambio (commit + push). El workflow scrapea al jugador nuevo y publica.
-3. El link queda en `https://USUARIO.github.io/REPO/<slug>/`. Ese es el link que se graba en el NFC.
+```bash
+python agregar.py https://liquipedia.net/counterstrike/Mvk
+git add -A
+git commit -m "nuevo jugador: mvk"
+git push
+```
+
+1. `agregar.py` saca el nombre de la página del link y crea el slug (`mvk`) en `players.json`. Rechaza links que no sean de Liquipedia CS, subpáginas (`/Results`) y slugs repetidos. Podés pasar varios links juntos, forzar el slug con `--slug nombre` o probar con `--dry-run` sin guardar nada.
+2. Al hacer push, GitHub Actions baja **solo los jugadores nuevos** (unos 1,5 min cada uno) y publica.
+3. El link del jugador queda en `https://darkside-hz.github.io/cs2card/<slug>/`. Ese es el que se graba en su tarjeta. El QR aparece en `qr/<slug>.png` cuando corrés el build local.
+
+Para verlo antes de publicar: `python agregar.py URL --scrape` baja los datos y arma el sitio local.
+
+Cada jugador es independiente: su propia página, sus opciones en `players.json` y, si querés, su carpeta `design/jugadores/<slug>/`. Si Liquipedia falla con uno, se conserva su última versión y los demás siguen publicándose. Todos los lunes se actualizan todos.
 
 El `slug` no se cambia nunca después de grabar la tarjeta, porque el NFC apunta a ese link.
 

@@ -18,6 +18,7 @@ Personalización por jugador (el link del NFC nunca cambia, solo lo que se sirve
 import html
 import json
 import os
+import re
 import shutil
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -99,6 +100,14 @@ def main():
     tpl = open(os.path.join(DESIGN, "index.html"), encoding="utf-8").read()
 
     conf = json.load(open(os.path.join(ROOT, "players.json"), encoding="utf-8"))
+    seen = set()
+    for entry in conf:
+        slug = entry.get("slug", "")
+        if not re.match(r"^[a-z0-9][a-z0-9-]{0,39}$", slug) or not entry.get("page"):
+            raise SystemExit(f"players.json: entrada inválida {entry} (slug en minúsculas/números/guiones y page obligatorios)")
+        if slug in seen or slug in ("assets", "data"):
+            raise SystemExit(f"players.json: slug repetido o reservado '{slug}'")
+        seen.add(slug)
     players = []
     for entry in conf:
         slug = entry["slug"]
