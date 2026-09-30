@@ -8,6 +8,7 @@ Salida:
     site/assets/                 styles.css, app.js (copiados de design/)
     site/data/<slug>.json
     qr/<slug>.png                QR del link de cada jugador (si hay base_url en site.json)
+    site/<slug>/                 páginas estáticas sin jugador (ver STATIC_PAGES), ej. "regalo"
 
 Personalización por jugador (el link del NFC nunca cambia, solo lo que se sirve en él):
     players.json                 opciones: theme, hide, tabs, intro, tagline, nick, bio, links...
@@ -27,6 +28,12 @@ DATA = os.path.join(ROOT, "data", "players")
 SITE = os.path.join(ROOT, "site")
 CONF = json.load(open(os.path.join(ROOT, "site.json"), encoding="utf-8"))
 BASE = (os.environ.get("BASE_URL") or CONF.get("base_url", "")).rstrip("/")
+
+# páginas estáticas, sin jugador ni scraper: slug -> archivo en design/ (self-contained, con su
+# propio <style>; se publican tal cual, sin pasar por inline_assets ni por players.json)
+STATIC_PAGES = {
+    "regalo": "regalo.html",  # tarjeta "de stock" sin asignar: animación de búsqueda con error
+}
 
 
 def read(path):
@@ -120,7 +127,7 @@ def main():
         slug = entry.get("slug", "")
         if not re.match(r"^[a-z0-9][a-z0-9-]{0,39}$", slug) or not entry.get("page"):
             raise SystemExit(f"players.json: entrada inválida {entry} (slug en minúsculas/números/guiones y page obligatorios)")
-        if slug in seen or slug in ("assets", "data"):
+        if slug in seen or slug in ("assets", "data") or slug in STATIC_PAGES:
             raise SystemExit(f"players.json: slug repetido o reservado '{slug}'")
         seen.add(slug)
     players = []
@@ -145,6 +152,13 @@ def main():
         with open(os.path.join(dst, "index.html"), "w", encoding="utf-8") as f:
             f.write(player_page(page_tpl, p, own))
         shutil.copy(path, os.path.join(SITE, "data", slug + ".json"))
+        q = qr(slug)
+        print(f"{slug}: {BASE + '/' + slug + '/' if BASE else '(sin base_url)'}{'  QR ok' if q else ''}")
+
+    for slug, fname in STATIC_PAGES.items():
+        dst = os.path.join(SITE, slug)
+        os.makedirs(dst, exist_ok=True)
+        shutil.copy(os.path.join(DESIGN, fname), os.path.join(dst, "index.html"))
         q = qr(slug)
         print(f"{slug}: {BASE + '/' + slug + '/' if BASE else '(sin base_url)'}{'  QR ok' if q else ''}")
 

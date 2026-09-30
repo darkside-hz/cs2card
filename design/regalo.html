@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0b0c">
+<meta name="description" content="Tarjeta CS2-CARD sin asignar. Conseguí la tuya en B4IT STUDIO.">
+<title>NO NICK · CS2-CARD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0b0b0c; --card: #151517; --line: #242428; --text: #ececec; --muted: #8e9089;
+  --orange: #ff6a13; --orange-2: #ff8a3d;
+  --display: "Chakra Petch", "Bahnschrift", system-ui, sans-serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; min-height: 100dvh; background: var(--bg); color: var(--text); font-family: var(--body);
+  display: grid; place-items: center; overflow: hidden;
+}
+.scene {
+  position: relative; width: min(92vw, 420px); padding: 0 20px; text-align: center;
+  background: radial-gradient(ellipse at 50% 40%, #1a1a1d 0%, var(--bg) 72%);
+}
+.grid {
+  position: absolute; inset: -40px; pointer-events: none;
+  background-image: linear-gradient(rgba(255,106,19,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,106,19,.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(circle at 50% 38%, #000 0%, transparent 62%);
+  animation: gridmove 6s linear infinite;
+}
+@keyframes gridmove { to { background-position: 0 28px, 28px 0; } }
+
+.mark { width: min(62vw, 220px); margin: 8px auto 0; fill: none; stroke-linecap: square; }
+.m-ring { stroke: var(--orange); stroke-width: 3; stroke-dasharray: 440; stroke-dashoffset: 440; animation: draw .9s .1s cubic-bezier(.6,0,.2,1) forwards; }
+.m-ring2 { stroke: #3a3a3f; stroke-width: 1.5; stroke-dasharray: 8 10; transform-origin: 100px 100px; animation: spin 8s linear infinite; }
+.m-line { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 60; stroke-dashoffset: 60; animation: draw .6s .4s ease forwards; }
+.m-x { stroke: var(--orange); stroke-width: 4; opacity: 0; stroke-dasharray: 34; stroke-dashoffset: 34; transform-origin: 100px 100px; }
+.scene.err .m-ring { animation: draw .9s .1s cubic-bezier(.6,0,.2,1) forwards, shake .5s 1s 2; }
+.scene.err .m-x { animation: drawx .35s 1s ease forwards; }
+.scene.err .m-plus { display: none; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes drawx { to { opacity: 1; stroke-dashoffset: 0; } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes shake { 20%,60% { transform: translateX(-4px); } 40%,80% { transform: translateX(4px); } }
+.m-plus { stroke-width: 4; opacity: 0; animation: pop .3s .75s ease forwards; }
+@keyframes pop { from { opacity: 0; transform: scale(.4); transform-origin: 100px 100px; } to { opacity: 1; transform: scale(1); transform-origin: 100px 100px; } }
+
+.status {
+  margin-top: 18px; font-family: var(--display); font-weight: 600; letter-spacing: .26em; font-size: 12px; color: var(--muted);
+  display: inline-flex; align-items: center; gap: 10px; min-height: 16px;
+}
+.status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 12px var(--orange); animation: blink .8s steps(2) infinite; }
+@keyframes blink { 50% { opacity: .2; } }
+
+.headline {
+  font-family: var(--display); font-weight: 700; font-style: italic; text-transform: uppercase;
+  font-size: clamp(46px, 15vw, 88px); line-height: .92; letter-spacing: -.01em; margin: 10px 0 0;
+  color: #fff; text-shadow: 0 0 26px rgba(255,106,19,.3);
+  opacity: 0; transform: translateY(10px); animation: up .5s 1.15s cubic-bezier(.2,.8,.2,1) forwards;
+}
+.tag {
+  display: inline-block; margin: 14px 0 0; padding: 7px 14px; border-radius: 999px;
+  border: 1px solid rgba(255,106,19,.45); background: rgba(255,106,19,.1); color: var(--orange-2);
+  font-family: var(--display); font-weight: 600; letter-spacing: .12em; font-size: 13px;
+  opacity: 0; transform: translateY(8px); animation: up .45s 1.4s cubic-bezier(.2,.8,.2,1) forwards;
+}
+@keyframes up { to { opacity: 1; transform: none; } }
+
+.foot {
+  position: fixed; left: 0; right: 0; bottom: calc(22px + env(safe-area-inset-bottom));
+  text-align: center; font-family: var(--display); letter-spacing: .3em; font-size: 10px; color: #3d3e42;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-delay: 0ms !important; }
+}
+</style>
+</head>
+<body>
+<div class="scene" id="scene">
+  <div class="grid"></div>
+  <svg class="mark" viewBox="0 0 200 200">
+    <circle class="m-ring" cx="100" cy="100" r="70"/>
+    <circle class="m-ring2" cx="100" cy="100" r="86"/>
+    <path class="m-line" d="M100 4 V60 M100 140 V196 M4 100 H60 M140 100 H196"/>
+    <path class="m-plus" d="M100 88 V112 M88 100 H112"/>
+    <path class="m-x" d="M88 88 L112 112 M112 88 L88 112"/>
+  </svg>
+  <div class="status"><span class="dot"></span><span id="status">NFC DETECTADO</span></div>
+  <h1 class="headline">NO NICK</h1>
+  <div class="tag">[ TE FALTA CS ]</div>
+</div>
+<div class="foot">CS2-CARD · B4IT STUDIO</div>
+<script>
+var st = document.getElementById("status");
+var seq = [[450, "LEYENDO CS2-CARD"], [950, "PERFIL NO ENCONTRADO"]];
+seq.forEach(function (s) { setTimeout(function () { st.textContent = s[1]; }, s[0]); });
+setTimeout(function () { document.getElementById("scene").classList.add("err"); }, 950);
+</script>
+</body>
+</html>

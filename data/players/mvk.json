@@ -1,0 +1,777 @@
+{
+ "slug": "mvk",
+ "nick": "Mvk",
+ "links": [
+  {
+   "type": "faceit",
+   "url": "https://faceitdb.com/profile/faceit/8077fcee-39b2-44e6-8b5b-a23a9133c7ad"
+  },
+  {
+   "type": "gamersclub",
+   "url": "https://gamersclub.com.br/player/1253296"
+  },
+  {
+   "type": "facebook",
+   "url": "https://facebook.com/mvkarg"
+  },
+  {
+   "type": "instagram",
+   "url": "https://www.instagram.com/jmargogliosi"
+  },
+  {
+   "type": "steam",
+   "url": "https://steamcommunity.com/profiles/76561197991541069"
+  },
+  {
+   "type": "twitter",
+   "url": "https://twitter.com/mvk1cs"
+  }
+ ],
+ "history": [
+  {
+   "game": "Counter-Strike",
+   "start": "2007-??-??",
+   "end": "20??-??-??",
+   "team": "r3action",
+   "role": null
+  },
+  {
+   "game": "Counter-Strike",
+   "start": "2008-??-??",
+   "end": "2011-09-14",
+   "team": "Wild Ineters",
+   "role": null
+  },
+  {
+   "game": "Counter-Strike",
+   "start": "2011-09-14",
+   "end": "2011-09-29",
+   "team": "Dattatec Team",
+   "role": null
+  },
+  {
+   "game": "Counter-Strike",
+   "start": "2011-??-??",
+   "end": "2012-??-??",
+   "team": "Wild Ineters",
+   "role": null
+  },
+  {
+   "game": "Counter-Strike",
+   "start": "2012-05-07",
+   "end": "2012-08-15",
+   "team": "Valhalla",
+   "role": null
+  },
+  {
+   "game": "Counter-Strike",
+   "start": "2012-08-15",
+   "end": "2012-11-26",
+   "team": "Isurus Gaming",
+   "role": null
+  },
+  {
+   "game": "Counter-Strike: Global Offensive",
+   "start": "2012-11-26",
+   "end": "2013-02-07",
+   "team": "Lemondogs.arg",
+   "role": null
+  },
+  {
+   "game": "Counter-Strike: Global Offensive",
+   "start": "2020-01-28",
+   "end": "2023-02-13",
+   "team": "Isurus",
+   "role": "Manager"
+  },
+  {
+   "game": "Counter-Strike: Global Offensive",
+   "start": "2023-02-13",
+   "end": "2023-02-14",
+   "team": "ex-Isurus",
+   "role": "Manager"
+  },
+  {
+   "game": "Counter-Strike: Global Offensive",
+   "start": "2023-02-14",
+   "end": "2023-09-14",
+   "team": "BESTIA",
+   "role": "Manager"
+  }
+ ],
+ "name": "Juan Manuel del Luján Argogliosi",
+ "romanized_name": null,
+ "nationality": "Argentina",
+ "born": "1990-09-20",
+ "status": "Retired",
+ "role": "Manager",
+ "team": null,
+ "games": [
+  "Counter-Strike",
+  "Global Offensive"
+ ],
+ "alternate_ids": [
+  "jm, jmvk, Mr.Faherenheit, Mr Fahrenheit"
+ ],
+ "winnings_liquipedia": 4728.0,
+ "years_active": {
+  "Player": "2005 - 2013",
+  "Org": "2020 - Present"
+ },
+ "infobox": {
+  "Name": "Juan Manuel del Luján Argogliosi",
+  "Nationality": "Argentina",
+  "Born": "September 20, 1990 (age 36)",
+  "Status": "Retired",
+  "Years Active (Player)": "2005 – 2013",
+  "Years Active (Org)": "2020 – Present",
+  "Role": "Manager",
+  "Alternate IDs": [
+   "jm, jmvk, Mr.Faherenheit, Mr Fahrenheit"
+  ],
+  "Approx. Total Winnings": "$4,728",
+  "Games": [
+   "Counter-Strike",
+   "Global Offensive"
+  ]
+ },
+ "bio": "Juan \"Mvk\" Argogliosi (born September 20, 1990) is a retired Argentinian professional Counter-Strike: Global Offensive manager and former professional Counter-Strike and Counter-Strike: Global Offensive player.",
+ "press": [],
+ "page": "Mvk",
+ "source_url": "https://liquipedia.net/counterstrike/Mvk",
+ "license": "CC BY-SA 3.0",
+ "updated": "2026-09-30",
+ "since": 2005,
+ "results": [
+  {
+   "date": "2012-08-26",
+   "place": "5th - 6th",
+   "place_rank": 5,
+   "tier": "A-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "WCG Pan-American Championship 2012",
+   "tournament_url": "https://liquipedia.net/counterstrike/World_Cyber_Games/2012/Pan-American",
+   "team": "Isurus",
+   "team_full": "Isurus Gaming",
+   "opponent": "Grp S.",
+   "opponent_full": "Grp S.",
+   "score": "1/0/2",
+   "prize": "-",
+   "prize_value": 0.0
+  },
+  {
+   "date": "2012-08-20",
+   "place": "1st",
+   "place_rank": 1,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "G-LAN Cup #3",
+   "tournament_url": "https://liquipedia.net/counterstrike/G-Lan_Cup/Season_3",
+   "team": "Isurus",
+   "team_full": "Isurus Gaming",
+   "opponent": "Esparta",
+   "opponent_full": "Esparta",
+   "score": "2 : 0",
+   "prize": "$758.10",
+   "prize_value": 758.1
+  },
+  {
+   "date": "2012-07-09",
+   "place": "2nd",
+   "place_rank": 2,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "Copa Punto Net: Aniversario 10 Años",
+   "tournament_url": "https://liquipedia.net/counterstrike/Copa_Punto_Net/Aniversario",
+   "team": "Valhalla",
+   "team_full": "Valhalla",
+   "opponent": "COR",
+   "opponent_full": "COR",
+   "score": "0 : 2",
+   "prize": "$554.50",
+   "prize_value": 554.5
+  },
+  {
+   "date": "2012-05-27",
+   "place": "1st",
+   "place_rank": 1,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "CaserosCup #1",
+   "tournament_url": "https://liquipedia.net/counterstrike/CaserosCup/1",
+   "team": "Valhalla",
+   "team_full": "Valhalla",
+   "opponent": "Esparta",
+   "opponent_full": "Esparta",
+   "score": "2 : 0",
+   "prize": "$1,120",
+   "prize_value": 1120.0
+  },
+  {
+   "date": "2012-04-25",
+   "place": "5th - 8th",
+   "place_rank": 5,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "Edgesys Cup",
+   "tournament_url": "https://liquipedia.net/counterstrike/Edgesys_Cup",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "TaxiBoys",
+   "opponent_full": "TaxiBoys",
+   "score": "0 : 2",
+   "prize": "-",
+   "prize_value": 0.0
+  },
+  {
+   "date": "2011-11-27",
+   "place": "5th - 8th",
+   "place_rank": 5,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "Copa ClanCO-LS",
+   "tournament_url": "https://liquipedia.net/counterstrike/Copa_ClanCO-LS",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "Killer.Ins",
+   "opponent_full": "Killer.Ins",
+   "score": "4 : 16",
+   "prize": "-",
+   "prize_value": 0.0
+  },
+  {
+   "date": "2011-11-06",
+   "place": "5th - 6th",
+   "place_rank": 5,
+   "tier": "A-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "WCG Pan-American Championship 2011",
+   "tournament_url": "https://liquipedia.net/counterstrike/World_Cyber_Games/2011/Pan-American",
+   "team": "ARG",
+   "team_full": "Team Argentina",
+   "opponent": "Grp S.",
+   "opponent_full": "Grp S.",
+   "score": "0/0/2",
+   "prize": "-",
+   "prize_value": 0.0
+  },
+  {
+   "date": "2011-09-18",
+   "place": "3rd - 4th",
+   "place_rank": 3,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "Zelectronics Cup 2011",
+   "tournament_url": "https://liquipedia.net/counterstrike/Zelectronics_Cup_2011",
+   "team": "Dattatec Team",
+   "team_full": "Dattatec Team",
+   "opponent": "TaxiBoys",
+   "opponent_full": "TaxiBoys",
+   "score": "0 : 2",
+   "prize": "-",
+   "prize_value": 0.0
+  },
+  {
+   "date": "2011-06-20",
+   "place": "1st",
+   "place_rank": 1,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "Copa Punto Net 2011",
+   "tournament_url": "https://liquipedia.net/counterstrike/Copa_Punto_Net/2011",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "TaxiBoys",
+   "opponent_full": "TaxiBoys",
+   "score": "2 : 1",
+   "prize": "$1,464",
+   "prize_value": 1464.0
+  },
+  {
+   "date": "2011-05-30",
+   "place": "1st",
+   "place_rank": 1,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "Quilmes Cup #4",
+   "tournament_url": "https://liquipedia.net/counterstrike/Quilmes_Cup/4",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "Frequency",
+   "opponent_full": "Frequency",
+   "score": "2 : 0",
+   "prize": "$1,171.20",
+   "prize_value": 1171.2
+  },
+  {
+   "date": "2011-03-07",
+   "place": "1st",
+   "place_rank": 1,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "BJ Gaming Cup 2011",
+   "tournament_url": "https://liquipedia.net/counterstrike/BJ_Gaming_Cup/2011",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "Frequency",
+   "opponent_full": "Frequency",
+   "score": "2 : 0",
+   "prize": "$1,240",
+   "prize_value": 1240.0
+  },
+  {
+   "date": "2010-12-05",
+   "place": "2nd",
+   "place_rank": 2,
+   "tier": "A-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "KODE5 2010",
+   "tournament_url": "https://liquipedia.net/counterstrike/KODE5/2010",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "CNB",
+   "opponent_full": "CNB e-Sports Club",
+   "score": "0 : 2",
+   "prize": "$10,000",
+   "prize_value": 10000.0
+  },
+  {
+   "date": "2010-10-10",
+   "place": "2nd",
+   "place_rank": 2,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "FIRE 2010",
+   "tournament_url": "https://liquipedia.net/counterstrike/FIRE/2010",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "mibr",
+   "opponent_full": "Mibr (Counter-Strike team)",
+   "score": "0 : 2",
+   "prize": "$400",
+   "prize_value": 400.0
+  },
+  {
+   "date": "2010-09-17",
+   "place": "1st - 3rd",
+   "place_rank": 1,
+   "tier": "Qualifier",
+   "type": "Online",
+   "game": "Counter-Strike",
+   "tournament": "IEM V American Championship: South American Qualifier",
+   "tournament_url": "https://liquipedia.net/counterstrike/Intel_Extreme_Masters/Season_V/American_Championship/South_America",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "Punto cL",
+   "opponent_full": "Punto cL",
+   "score": "2 : 0",
+   "prize": "-",
+   "prize_value": 0.0
+  },
+  {
+   "date": "2010-08-29",
+   "place": "1st",
+   "place_rank": 1,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "Wild Ineters Cup 2010",
+   "tournament_url": "https://liquipedia.net/counterstrike/Wild_Ineters_Cup/2010",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "TRS",
+   "opponent_full": "TRS",
+   "score": "2 : 1",
+   "prize": "$1,395.23",
+   "prize_value": 1395.23
+  },
+  {
+   "date": "2010-05-23",
+   "place": "1st",
+   "place_rank": 1,
+   "tier": "Qualifier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "KODE5 Latin America 2010",
+   "tournament_url": "https://liquipedia.net/counterstrike/KODE5/2010/Latin_America",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "No Limits",
+   "opponent_full": "No Limits",
+   "score": "2 : 0",
+   "prize": "-",
+   "prize_value": 0.0
+  },
+  {
+   "date": "2010-02-14",
+   "place": "1st",
+   "place_rank": 1,
+   "tier": "Qualifier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "KODE5 2010: Argentina",
+   "tournament_url": "https://liquipedia.net/counterstrike/KODE5/2010/Argentina",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "TRS",
+   "opponent_full": "TRS",
+   "score": "2 : 0",
+   "prize": "-",
+   "prize_value": 0.0
+  },
+  {
+   "date": "2009-10-12",
+   "place": "1st",
+   "place_rank": 1,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "Copa LocalStrike 2009",
+   "tournament_url": "https://liquipedia.net/counterstrike/Copa_LocalStrike/2009",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "TRS",
+   "opponent_full": "TRS",
+   "score": "2 : 1",
+   "prize": "$2,278",
+   "prize_value": 2278.0
+  },
+  {
+   "date": "2009-10-01",
+   "place": "1st",
+   "place_rank": 1,
+   "tier": "C-Tier",
+   "type": "Online",
+   "game": "Counter-Strike",
+   "tournament": "Liga Online DIDE LocalStrike",
+   "tournament_url": "https://liquipedia.net/counterstrike/Liga_Online_DIDE_LocalStrike",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "Undertow",
+   "opponent_full": "UNDERTOW",
+   "score": "2 : 1",
+   "prize": "$520",
+   "prize_value": 520.0
+  },
+  {
+   "date": "2009-08-17",
+   "place": "1st",
+   "place_rank": 1,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "CMD Winter Championship 2009",
+   "tournament_url": "https://liquipedia.net/counterstrike/CMD_Championship/Winter/2009",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "Killer.Ins",
+   "opponent_full": "Killer.Ins",
+   "score": "2 : 0",
+   "prize": "$1,170",
+   "prize_value": 1170.0
+  },
+  {
+   "date": "2009-07-13",
+   "place": "3rd - 4th",
+   "place_rank": 3,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "Quilmes Cup #3",
+   "tournament_url": "https://liquipedia.net/counterstrike/Quilmes_Cup/3",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "Killer.Ins",
+   "opponent_full": "Killer.Ins",
+   "score": "1 : 2",
+   "prize": "-",
+   "prize_value": 0.0
+  },
+  {
+   "date": "2009-03-01",
+   "place": "3rd - 4th",
+   "place_rank": 3,
+   "tier": "Qualifier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "KODE5 Latin America 2009 - Argentina",
+   "tournament_url": "https://liquipedia.net/counterstrike/KODE5/2009/Argentina",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "TaxiBoys",
+   "opponent_full": "TaxiBoys",
+   "score": "0 : 2",
+   "prize": "-",
+   "prize_value": 0.0
+  },
+  {
+   "date": "2008-12-14",
+   "place": "2nd",
+   "place_rank": 2,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "Copa Punto Net Summer 2008",
+   "tournament_url": "https://liquipedia.net/counterstrike/Copa_Punto_Net/Summer/2008",
+   "team": "wild.i",
+   "team_full": "wild.i",
+   "opponent": "Weakmind",
+   "opponent_full": "Weakmind",
+   "score": "0 : 2",
+   "prize": "$362.50",
+   "prize_value": 362.5
+  },
+  {
+   "date": "2008-05-04",
+   "place": "3rd - 4th",
+   "place_rank": 3,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "Quilmes Cup #1",
+   "tournament_url": "https://liquipedia.net/counterstrike/Quilmes_Cup/1",
+   "team": "EVIP",
+   "team_full": "EVIP",
+   "opponent": "TRS",
+   "opponent_full": "TRS",
+   "score": "0 : 2",
+   "prize": "-",
+   "prize_value": 0.0
+  },
+  {
+   "date": "2007-04-02",
+   "place": "5th - 8th",
+   "place_rank": 5,
+   "tier": "C-Tier",
+   "type": "Offline",
+   "game": "Counter-Strike",
+   "tournament": "CMD Summer Championship 2007",
+   "tournament_url": "https://liquipedia.net/counterstrike/CMD_Championship/Summer/2007",
+   "team": "r3action",
+   "team_full": "R3action",
+   "opponent": "Infernal Gamers",
+   "opponent_full": "Infernal Gamers",
+   "score": "0 : 2",
+   "prize": "-",
+   "prize_value": 0.0
+  }
+ ],
+ "coaching": [],
+ "stats": {
+  "player": {
+   "events": 25,
+   "wins": 9,
+   "podiums": 16,
+   "finals": 13,
+   "qualifiers_won": 3,
+   "main_events": 21,
+   "prize_total": 22433.53,
+   "first_year": "2007",
+   "last_year": "2012",
+   "by_year": {
+    "2007": {
+     "events": 1,
+     "wins": 0,
+     "podiums": 0,
+     "prize": 0.0
+    },
+    "2008": {
+     "events": 2,
+     "wins": 0,
+     "podiums": 2,
+     "prize": 362.5
+    },
+    "2009": {
+     "events": 5,
+     "wins": 3,
+     "podiums": 4,
+     "prize": 3968.0
+    },
+    "2010": {
+     "events": 6,
+     "wins": 1,
+     "podiums": 3,
+     "prize": 11795.23
+    },
+    "2011": {
+     "events": 6,
+     "wins": 3,
+     "podiums": 4,
+     "prize": 3875.2
+    },
+    "2012": {
+     "events": 5,
+     "wins": 2,
+     "podiums": 3,
+     "prize": 2432.6
+    }
+   },
+   "top_teams": [
+    [
+     "wild.i",
+     17
+    ],
+    [
+     "Isurus Gaming",
+     2
+    ],
+    [
+     "Valhalla",
+     2
+    ],
+    [
+     "Team Argentina",
+     1
+    ],
+    [
+     "Dattatec Team",
+     1
+    ]
+   ],
+   "tiers": {
+    "A-Tier": 3,
+    "C-Tier": 18,
+    "Qualifier": 4
+   },
+   "best_prize": {
+    "date": "2010-12-05",
+    "place": "2nd",
+    "place_rank": 2,
+    "tier": "A-Tier",
+    "type": "Offline",
+    "game": "Counter-Strike",
+    "tournament": "KODE5 2010",
+    "tournament_url": "https://liquipedia.net/counterstrike/KODE5/2010",
+    "team": "wild.i",
+    "team_full": "wild.i",
+    "opponent": "CNB",
+    "opponent_full": "CNB e-Sports Club",
+    "score": "0 : 2",
+    "prize": "$10,000",
+    "prize_value": 10000.0
+   }
+  },
+  "coach": {
+   "events": 0,
+   "wins": 0,
+   "podiums": 0,
+   "finals": 0,
+   "qualifiers_won": 0,
+   "main_events": 0,
+   "prize_total": 0,
+   "first_year": null,
+   "last_year": null,
+   "by_year": {},
+   "top_teams": [],
+   "tiers": {},
+   "best_prize": null
+  },
+  "all": {
+   "events": 25,
+   "wins": 9,
+   "podiums": 16,
+   "finals": 13,
+   "qualifiers_won": 3,
+   "main_events": 21,
+   "prize_total": 22433.53,
+   "first_year": "2007",
+   "last_year": "2012",
+   "by_year": {
+    "2007": {
+     "events": 1,
+     "wins": 0,
+     "podiums": 0,
+     "prize": 0.0
+    },
+    "2008": {
+     "events": 2,
+     "wins": 0,
+     "podiums": 2,
+     "prize": 362.5
+    },
+    "2009": {
+     "events": 5,
+     "wins": 3,
+     "podiums": 4,
+     "prize": 3968.0
+    },
+    "2010": {
+     "events": 6,
+     "wins": 1,
+     "podiums": 3,
+     "prize": 11795.23
+    },
+    "2011": {
+     "events": 6,
+     "wins": 3,
+     "podiums": 4,
+     "prize": 3875.2
+    },
+    "2012": {
+     "events": 5,
+     "wins": 2,
+     "podiums": 3,
+     "prize": 2432.6
+    }
+   },
+   "top_teams": [
+    [
+     "wild.i",
+     17
+    ],
+    [
+     "Isurus Gaming",
+     2
+    ],
+    [
+     "Valhalla",
+     2
+    ],
+    [
+     "Team Argentina",
+     1
+    ],
+    [
+     "Dattatec Team",
+     1
+    ]
+   ],
+   "tiers": {
+    "A-Tier": 3,
+    "C-Tier": 18,
+    "Qualifier": 4
+   },
+   "best_prize": {
+    "date": "2010-12-05",
+    "place": "2nd",
+    "place_rank": 2,
+    "tier": "A-Tier",
+    "type": "Offline",
+    "game": "Counter-Strike",
+    "tournament": "KODE5 2010",
+    "tournament_url": "https://liquipedia.net/counterstrike/KODE5/2010",
+    "team": "wild.i",
+    "team_full": "wild.i",
+    "opponent": "CNB",
+    "opponent_full": "CNB e-Sports Club",
+    "score": "0 : 2",
+    "prize": "$10,000",
+    "prize_value": 10000.0
+   }
+  }
+ },
+ "custom": {}
+}
