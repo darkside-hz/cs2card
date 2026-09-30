@@ -8,7 +8,7 @@ Salida:
     site/assets/                 styles.css, app.js (copiados de design/)
     site/data/<slug>.json
     qr/<slug>.png                QR del link de cada jugador (si hay base_url en site.json)
-    site/<slug>/                 páginas estáticas sin jugador (ver STATIC_PAGES), ej. "regalo"
+    site/<slug>/                 páginas estáticas sin jugador (ver STATIC_PAGES), ej. "no-nick"
 
 Personalización por jugador (el link del NFC nunca cambia, solo lo que se sirve en él):
     players.json                 opciones: theme, hide, tabs, intro, tagline, nick, bio, links...
@@ -32,7 +32,7 @@ BASE = (os.environ.get("BASE_URL") or CONF.get("base_url", "")).rstrip("/")
 # páginas estáticas, sin jugador ni scraper: slug -> archivo en design/ (self-contained, con su
 # propio <style>; se publican tal cual, sin pasar por inline_assets ni por players.json)
 STATIC_PAGES = {
-    "regalo": "regalo.html",  # tarjeta "de stock" sin asignar: animación de búsqueda con error
+    "no-nick": "no-nick.html",  # tarjeta "de stock" sin asignar: animación de búsqueda con error
 }
 
 
