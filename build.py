@@ -96,7 +96,7 @@ def index_page(players):
 <p class="headline reveal">Tarjetas NFC para jugadores de Counter-Strike. Apoyá el celular en la tarjeta y mirá el perfil.</p>
 </div></header>
 <main><div class="list">{cards}</div></main>
-<footer class="foot"><div>Datos de <a href="https://liquipedia.net/counterstrike/">Liquipedia</a> · CC BY-SA 3.0</div><div class="foot-brand">CS2-CARD · B4IT STUDIO</div></footer>
+<footer class="foot"><div>Datos de <a href="https://liquipedia.net/counterstrike/">Liquipedia</a> · CC BY-SA 3.0</div><div class="foot-brand">CS2-CARD · B4IT STUDIO</div><div class="signature">created by <a href="https://x.com/darks1de_gg" target="_blank" rel="noopener">DARKS1DE</a></div></footer>
 </body></html>"""
 
 

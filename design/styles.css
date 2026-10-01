@@ -276,6 +276,8 @@ main { max-width: 880px; overflow-x: clip; margin: 0 auto; padding: 18px 16px 10
 .foot { max-width: 880px; margin: 16px auto 0; padding: 18px 16px calc(28px + env(safe-area-inset-bottom)); color: #5c5d62; font-size: 11.5px; text-align: center; border-top: 1px solid var(--line); }
 .foot a { color: #8e9089; }
 .foot-brand { font-family: var(--display); letter-spacing: .3em; margin-top: 6px; color: #3d3e42; }
+.signature { margin-top: 10px; font-size: 10.5px; color: #4a4b50; }
+.signature a { color: #4a4b50; text-decoration: underline; text-underline-offset: 2px; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-delay: 0ms !important; transition-duration: .01ms !important; }
