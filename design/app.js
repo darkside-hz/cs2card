@@ -68,6 +68,9 @@
       target.textContent = text.slice(0, n) + [...text.slice(n)].map(c => c === " " ? " " : chars[(Math.random() * chars.length) | 0]).join("");
       if (k < 1) requestAnimationFrame(frame); else target.textContent = text;
     });
+    // red de seguridad: si el tab queda en segundo plano, rAF se pausa y el scramble
+    // podría quedar congelado a mitad de camino — esto fuerza el texto final igual.
+    setTimeout(() => (target.textContent = text), ms + 60);
   }
   let introDone = false;
   function endIntro() {
@@ -83,9 +86,28 @@
   if (HIDE.has("intro")) { endIntro(); }
   const st = $("#intro-status");
   const IT = C.intro || {};
-  setTimeout(() => (st.textContent = IT.reading || "LEYENDO CS2-CARD"), 550);
-  setTimeout(() => { st.textContent = IT.found || "PERFIL ENCONTRADO"; scramble($("#intro-nick"), (IT.title || nick).toUpperCase(), 700); }, 1000);
-  setTimeout(endIntro, reduced ? 300 : (IT.duration || 2500));
+  const BAR_END = 2100; // debe coincidir con la animación "load" de .intro-bar i (delay .2s + 1.9s)
+  if (reduced) {
+    st.textContent = IT.reading || "LEYENDO CS2-CARD";
+    scramble($("#intro-nick"), (IT.title || nick).toUpperCase(), 1);
+    setTimeout(() => {
+      $(".intro-bar").classList.add("done");
+      st.parentElement.classList.add("found");
+      st.textContent = `[ ${IT.found || "PERFIL ENCONTRADO"} ]`;
+    }, 120);
+    setTimeout(endIntro, IT.duration || 300);
+  } else {
+    setTimeout(() => (st.textContent = IT.reading || "LEYENDO CS2-CARD"), 500);
+    setTimeout(() => scramble($("#intro-nick"), (IT.title || nick).toUpperCase(), 700), 500);
+    // recién cuando la barra termina de llenarse: se achica y el estado pasa a "encontrado",
+    // parpadeando entre corchetes, y ahí sí se abre la página
+    setTimeout(() => {
+      $(".intro-bar").classList.add("done");
+      st.parentElement.classList.add("found");
+      st.textContent = `[ ${IT.found || "PERFIL ENCONTRADO"} ]`;
+    }, BAR_END);
+    setTimeout(endIntro, IT.duration || BAR_END + 850);
+  }
 
   // ---------- HERO ----------
   $("#nick").textContent = nick;

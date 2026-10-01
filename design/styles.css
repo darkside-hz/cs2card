@@ -51,7 +51,9 @@ a { color: inherit; }
 }
 @keyframes gridmove { to { background-position: 0 28px, 28px 0; } }
 .intro-cross {
-  position: absolute; width: min(70vw, 340px); top: 50%; left: 50%;
+  /* acotada también por vh: en pantallas bajas/cuadradas el tick inferior de la mira
+     no debe llegar a pisar el texto de estado (ver .intro-text) */
+  position: absolute; width: min(62vw, 34vh, 320px); top: 50%; left: 50%;
   transform: translate(-50%, -62%);
   fill: none; stroke: var(--orange); stroke-linecap: square;
 }
@@ -63,19 +65,27 @@ a { color: inherit; }
 @keyframes spin { to { transform: rotate(360deg); } }
 @keyframes pop { from { opacity: 0; transform: scale(.4); transform-origin: 100px 100px; } to { opacity: 1; transform: scale(1); transform-origin: 100px 100px; } }
 
-.intro-text { position: absolute; left: 0; right: 0; top: 62%; text-align: center; padding: 0 20px; }
+.intro-text { position: absolute; left: 0; right: 0; top: 64%; text-align: center; padding: 0 20px; }
 .intro-status {
   font-family: var(--display); font-weight: 600; letter-spacing: .28em; font-size: 12px; color: var(--muted);
-  display: inline-flex; align-items: center; gap: 10px;
+  display: inline-flex; align-items: center; gap: 10px; min-height: 16px;
 }
 .intro-status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 12px var(--orange); animation: blink .8s steps(2) infinite; }
 @keyframes blink { 50% { opacity: .2; } }
+.intro-status.found { color: var(--orange-2); }
+.intro-status.found .dot { animation: none; }
+.intro-status.found #intro-status { animation: foundblink .22s steps(1) 6; }
+@keyframes foundblink { 50% { opacity: .1; } }
 .intro-nick {
   font-family: var(--display); font-weight: 700; font-size: clamp(44px, 14vw, 96px); line-height: 1.05;
   letter-spacing: .02em; margin: 10px 0 16px; color: #fff;
   text-shadow: 0 0 24px rgba(255,106,19,.35);
 }
-.intro-bar { width: min(60vw, 260px); height: 3px; margin: 0 auto; background: #222; overflow: hidden; border-radius: 2px; }
+.intro-bar {
+  width: min(60vw, 260px); height: 3px; margin: 0 auto; background: #222; overflow: hidden; border-radius: 2px;
+  transition: width .35s ease, opacity .35s ease;
+}
+.intro-bar.done { width: 0; opacity: 0; }
 .intro-bar i { display: block; height: 100%; width: 0; background: var(--orange); animation: load 1.9s .2s cubic-bezier(.5,0,.2,1) forwards; }
 @keyframes load { to { width: 100%; } }
 .intro-skip { position: absolute; bottom: calc(22px + env(safe-area-inset-bottom)); font-size: 12px; color: #55565c; letter-spacing: .1em; }
