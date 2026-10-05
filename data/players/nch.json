@@ -193,7 +193,7 @@
   "Counter-Strike 2"
  ],
  "alternate_ids": [],
- "winnings_liquipedia": 1419.0,
+ "winnings_liquipedia": 1258.0,
  "years_active": {
   "Player": "2011 - 2019",
   "Coach": "2019 - 2025"
@@ -206,7 +206,7 @@
   "Years Active (Player)": "2011 – 2019",
   "Years Active (Coach)": "2019 – 2025",
   "Role": "Coach",
-  "Approx. Total Winnings": "$1,419",
+  "Approx. Total Winnings": "$1,258",
   "Games": [
    "Counter-Strike",
    "Global Offensive",
@@ -223,7 +223,7 @@
  "page": "NCH",
  "source_url": "https://liquipedia.net/counterstrike/NCH",
  "license": "CC BY-SA 3.0",
- "updated": "2026-09-25",
+ "updated": "2026-10-05",
  "since": 2011,
  "results": [
   {
@@ -293,23 +293,6 @@
    "score": "0 : 2",
    "prize": "$357",
    "prize_value": 357.0
-  },
-  {
-   "date": "2019-09-08",
-   "place": "1st",
-   "place_rank": 1,
-   "tier": "C-Tier",
-   "type": "Offline",
-   "game": "Global Offensive",
-   "tournament": "La Liga: Pro Division - Season 2 Apertura",
-   "tournament_url": "https://liquipedia.net/counterstrike/TDJ/La_Liga/Pro_Division/Season_2/Apertura",
-   "team": "Sinisters",
-   "team_full": "Sinisters Esports",
-   "opponent": "MvG",
-   "opponent_full": "Malvinas Gaming",
-   "score": "2 : 0",
-   "prize": "$805.50",
-   "prize_value": 805.5
   },
   {
    "date": "2019-05-02",
@@ -3070,13 +3053,13 @@
  ],
  "stats": {
   "player": {
-   "events": 51,
-   "wins": 4,
-   "podiums": 16,
-   "finals": 11,
+   "events": 50,
+   "wins": 3,
+   "podiums": 15,
+   "finals": 10,
    "qualifiers_won": 4,
-   "main_events": 37,
-   "prize_total": 7226.38,
+   "main_events": 36,
+   "prize_total": 6420.88,
    "first_year": "2011",
    "last_year": "2023",
    "by_year": {
@@ -3117,10 +3100,10 @@
      "prize": 0.0
     },
     "2019": {
-     "events": 5,
-     "wins": 1,
-     "podiums": 2,
-     "prize": 1162.5
+     "events": 4,
+     "wins": 0,
+     "podiums": 1,
+     "prize": 357.0
     },
     "2020": {
      "events": 1,
@@ -3166,7 +3149,7 @@
    "tiers": {
     "Qualifier": 14,
     "B-Tier": 1,
-    "C-Tier": 36
+    "C-Tier": 35
    },
    "best_prize": {
     "date": "2016-08-14",
@@ -3293,13 +3276,13 @@
    }
   },
   "all": {
-   "events": 167,
-   "wins": 12,
-   "podiums": 45,
-   "finals": 29,
+   "events": 166,
+   "wins": 11,
+   "podiums": 44,
+   "finals": 28,
    "qualifiers_won": 13,
-   "main_events": 105,
-   "prize_total": 56764.15,
+   "main_events": 104,
+   "prize_total": 55958.65,
    "first_year": "2011",
    "last_year": "2026",
    "by_year": {
@@ -3340,10 +3323,10 @@
      "prize": 0.0
     },
     "2019": {
-     "events": 13,
-     "wins": 2,
-     "podiums": 6,
-     "prize": 2362.5
+     "events": 12,
+     "wins": 1,
+     "podiums": 5,
+     "prize": 1557.0
     },
     "2020": {
      "events": 11,
@@ -3403,7 +3386,7 @@
     ],
     [
      "Sinisters Esports",
-     11
+     10
     ],
     [
      "pvore",
@@ -3413,7 +3396,7 @@
    "tiers": {
     "Qualifier": 62,
     "B-Tier": 10,
-    "C-Tier": 94,
+    "C-Tier": 93,
     "Points": 1
    },
    "best_prize": {
