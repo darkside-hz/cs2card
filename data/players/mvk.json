@@ -140,7 +140,7 @@
  "page": "Mvk",
  "source_url": "https://liquipedia.net/counterstrike/Mvk",
  "license": "CC BY-SA 3.0",
- "updated": "2026-11-09",
+ "updated": "2026-11-16",
  "since": 2005,
  "results": [
   {
@@ -393,7 +393,7 @@
    "team": "wild.i",
    "team_full": "wild.i",
    "opponent": "TRS",
-   "opponent_full": "TRS",
+   "opponent_full": "The Right Stuff",
    "score": "2 : 1",
    "prize": "$1,395.23",
    "prize_value": 1395.23
@@ -427,7 +427,7 @@
    "team": "wild.i",
    "team_full": "wild.i",
    "opponent": "TRS",
-   "opponent_full": "TRS",
+   "opponent_full": "The Right Stuff",
    "score": "2 : 0",
    "prize": "-",
    "prize_value": 0.0
@@ -444,7 +444,7 @@
    "team": "wild.i",
    "team_full": "wild.i",
    "opponent": "TRS",
-   "opponent_full": "TRS",
+   "opponent_full": "The Right Stuff",
    "score": "2 : 1",
    "prize": "$2,278",
    "prize_value": 2278.0
@@ -546,7 +546,7 @@
    "team": "EVIP",
    "team_full": "EVIP",
    "opponent": "TRS",
-   "opponent_full": "TRS",
+   "opponent_full": "The Right Stuff",
    "score": "0 : 2",
    "prize": "-",
    "prize_value": 0.0

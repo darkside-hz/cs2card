@@ -223,7 +223,7 @@
  "page": "NCH",
  "source_url": "https://liquipedia.net/counterstrike/NCH",
  "license": "CC BY-SA 3.0",
- "updated": "2026-11-09",
+ "updated": "2026-11-16",
  "since": 2011,
  "results": [
   {
@@ -525,9 +525,9 @@
    "tournament": "Copa Argentina 2016",
    "tournament_url": "https://liquipedia.net/counterstrike/Copa_Argentina/2016",
    "team": "TRS",
-   "team_full": "TRS",
+   "team_full": "The Right Stuff",
    "opponent": "FoN",
-   "opponent_full": "FoN",
+   "opponent_full": "Force of Nature",
    "score": "0 : 2",
    "prize": "-",
    "prize_value": 0.0
@@ -542,7 +542,7 @@
    "tournament": "Liga Profissional Gamers Club: August 2016",
    "tournament_url": "https://liquipedia.net/counterstrike/Gamers_Club/Liga_Profissional/2016/August",
    "team": "TRS",
-   "team_full": "TRS",
+   "team_full": "The Right Stuff",
    "opponent": "PG",
    "opponent_full": "ProGaming e-Sports",
    "score": "FF : W",
@@ -918,7 +918,7 @@
    "team": "pvore",
    "team_full": "pvore",
    "opponent": "TRS",
-   "opponent_full": "TRS",
+   "opponent_full": "The Right Stuff",
    "score": "0 : 2",
    "prize": "-",
    "prize_value": 0.0
@@ -1003,7 +1003,7 @@
    "team": "MOB",
    "team_full": "Team MOB",
    "opponent": "TRS",
-   "opponent_full": "TRS",
+   "opponent_full": "The Right Stuff",
    "score": "2 : 1",
    "prize": "$939.12",
    "prize_value": 939.12
@@ -1020,7 +1020,7 @@
    "team": "MOB",
    "team_full": "Team MOB",
    "opponent": "TRS",
-   "opponent_full": "TRS",
+   "opponent_full": "The Right Stuff",
    "score": "1 : 2",
    "prize": "$567.45",
    "prize_value": 567.45
@@ -1037,7 +1037,7 @@
    "team": "MOB",
    "team_full": "Team MOB",
    "opponent": "TRS",
-   "opponent_full": "TRS",
+   "opponent_full": "The Right Stuff",
    "score": "0 : 2",
    "prize": "$231",
    "prize_value": 231.0
